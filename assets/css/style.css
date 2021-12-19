@@ -18,11 +18,12 @@ body{
 * {
 	margin: 0;
 	font-family: "Quicksand", sans-serif;
+	font-weight: 700;
 }
 
 #logo {
 	width: 20em;
-	height: 20em;
+	height: 18em;
 	background-color: #ff0000;
 	margin-bottom: 2em;
 	background: url('../images/html/devjck.svg');
@@ -40,7 +41,6 @@ button {
 	border-radius: .5rem;
 	color: #444;
 	font-size: 1rem;
-	font-weight: 700;
 	letter-spacing: .2rem;
 	text-align: center;
 	outline: none;
@@ -70,8 +70,9 @@ button:active {
     width: 20em;
 }
 #contacts button {
-	width: 5em;
-	padding: 1.5em 1.5em;
+	width: 3em;
+	padding: 0.5em 0.5em;
+	font-size: 1.7em;
 }
 
 a {
@@ -84,6 +85,6 @@ FONTS
 */
 @font-face {
 	font-family: "Quicksand";
-	src: url(../fonts/Quicksand/Quicksand-Medium.ttf) format("truetype");
-	font-weight: medium;
+	src: url(../fonts/Quicksand/Quicksand-Bold.ttf) format("truetype");
+	font-weight: 700;
 }
