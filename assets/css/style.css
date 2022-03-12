@@ -6,6 +6,7 @@ body{
     -ms-user-select: none;
     user-select: none;
 	scroll-behavior: smooth;
+	-webkit-tap-highlight-color: transparent;
 	
 	display: flex;
 	justify-content: center;
@@ -101,6 +102,7 @@ button.active, #contact-frame{
 	background: url('../images/html/jck-portrait.jpg');
 	background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 #contact-frame-infos ul{
 	list-style-type: none;
