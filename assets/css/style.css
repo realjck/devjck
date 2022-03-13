@@ -40,13 +40,10 @@ body > div {
     background-repeat: no-repeat;
 }
 
-#main-buttons {
-    height: 12.5em;
-}
-
 button {
     width: 20em;
-	padding: 1.5em 5em;
+    height: 4.5em;
+	padding: 1.5em 1.5em;
     margin-bottom: 2em;
 	background: #f1c40f;
 	border: none;
@@ -69,7 +66,7 @@ button:hover {
 			  2px 2px 2px rgba(255, 255, 255, .05),
 			  2px 2px 4px rgba(0, 0, 0, .5);
 }
-button:active {
+button:active, #contact-frame {
 	box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
 			  inset -2px -2px 4px rgba(255, 255, 255, .5),
 			  inset 2px 2px 2px rgba(255, 255, 255, .075),
@@ -81,16 +78,18 @@ button:active {
     display: flex;
 }
 #secondary-buttons button {
+	font-size: 1.7em;
+	height: calc(4.5em / 1.7);
+	margin-bottom: calc(2em / 1.7);
 	width: 3em;
 	padding: 0.5em 0.5em;
-	font-size: 1.7em;
 }
 button.active, #contact-frame{
 	background: #444;
 	color: #f1c40f;
 }
 #contact-frame {
-	height: 10.5em;
+	height: 11em;
     margin-bottom: 2em;
 	border-radius: 1em;
 	display: flex;
