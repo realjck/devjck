@@ -1,11 +1,12 @@
+// buttons
 $("#bt3").on("click", function(){
-	ShowContact(true);
+	showContact(true);
 });
 $("#bt-back").on("click", function(){
-	ShowContact(false);
+	showContact(false);
 });
 
-function ShowContact(shows){
+function showContact(shows){
 	if (shows){
 		$("#main-buttons").hide();
 		$("#contact-frame").fadeIn();
@@ -16,3 +17,15 @@ function ShowContact(shows){
 		$("#secondary-buttons").hide();
 	}
 }
+
+
+// preload image
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+preload([
+    'assets/images/html/jck-portrait.jpg'
+]);
