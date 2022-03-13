@@ -22,8 +22,8 @@ function showContact(shows){
 // preload
 preloadXHR([
     'assets/images/html/jck-portrait.jpg',
-    'assets/libs/fontawesome/wenfonts/fa-solid-900.woff2',
-    'assets/libs/fontawesome/wenfonts/fa-brands-400.woff2'
+    'assets/libs/fontawesome/webfonts/fa-solid-900.woff2',
+    'assets/libs/fontawesome/webfonts/fa-brands-400.woff2'
 ]);
 
 function preloadXHR(assetsAr){
