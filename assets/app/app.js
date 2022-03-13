@@ -19,13 +19,17 @@ function showContact(shows){
 }
 
 
-// preload image
-function preload(arrayOfImages) {
-    $(arrayOfImages).each(function(){
-        $('<img/>')[0].src = this;
-    });
-}
-
-preload([
-    'assets/images/html/jck-portrait.jpg'
+// preload
+preloadXHR([
+    'assets/images/html/jck-portrait.jpg',
+    'assets/libs/fontawesome/wenfonts/fa-solid-900.woff2',
+    'assets/libs/fontawesome/wenfonts/fa-brands-400.woff2'
 ]);
+
+function preloadXHR(assetsAr){
+	for (i=0; i<assetsAr.length; i++){
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', assetsAr[i]);
+		xhr.send('');
+	}
+}
