@@ -92,10 +92,11 @@ button:active {
     text-align: left;
     font-size: 1em;
     height: 4.5em;
-    padding-left: 2.75em;
+    padding-left: 2.4em;
+    padding-bottom: 1em;
 }
 .large i {
-    font-size: 1.43em;
+    font-size: 1.9em;
 }
 button.active {
 	background: var(--text-color);;
