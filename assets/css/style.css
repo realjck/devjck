@@ -1,3 +1,11 @@
+* {
+	margin: 0;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 700;
+	
+	--bg-color: #f1c40f;
+	--text-color: black;
+}
 body{
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -13,13 +21,8 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	margin: 0;
-	background: #f1c40f;
+	background: var(--bg-color);
 	flex-direction: column;
-}
-* {
-	margin: 0;
-	font-family: "Quicksand", sans-serif;
-	font-weight: 700;
 }
 a {
     color: inherit;
@@ -45,10 +48,10 @@ button {
     height: 4.5em;
 	padding: 1.5em 1.5em;
     margin-bottom: 2em;
-	background: #f1c40f;
+	background: var(--bg-color);
 	border: none;
 	border-radius: .5rem;
-	color: #000;
+	color: var(--text-color);
 	font-size: 1rem;
 	letter-spacing: .2rem;
 	text-align: center;
@@ -95,8 +98,8 @@ button:active {
     font-size: 1.43em;
 }
 button.active {
-	background: #000;
-	color: #f1c40f;
+	background: var(--text-color);;
+	color: var(--bg-color);
 }
 
 /*
