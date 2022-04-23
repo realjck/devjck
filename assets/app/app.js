@@ -1,3 +1,6 @@
+// cursor
+//$(this).css( 'cursor', 'url(../images/html/favicon.png), auto' );
+
 // buttons
 $("#bt3").on("click", function(){
 	showContact(true);
