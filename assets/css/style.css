@@ -66,57 +66,39 @@ button:hover {
 			  2px 2px 2px rgba(255, 255, 255, .05),
 			  2px 2px 4px rgba(0, 0, 0, .5);
 }
-button:active, #contact-frame {
+button:active {
 	box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
 			  inset -2px -2px 4px rgba(255, 255, 255, .5),
 			  inset 2px 2px 2px rgba(255, 255, 255, .075),
 			  inset 2px 2px 4px rgba(0, 0, 0, .15);
 }
 
-#secondary-buttons {
+.secondary-buttons {
     justify-content: space-between;
     display: flex;
 }
-#secondary-buttons button {
+.secondary-buttons button {
 	font-size: 1.7em;
 	height: calc(4.5em / 1.7);
 	margin-bottom: calc(2em / 1.7);
 	width: 3em;
 	padding: 0.5em 0.5em;
 }
-button.active, #contact-frame{
+.secondary-buttons button.large {
+	width: 11.07em;
+    text-align: left;
+    font-size: 1.19em;
+    height: calc(4.5em / 1.19);
+    padding-left: 0.9em;
+}
+.large i {
+    font-size: 1.43em;
+}
+button.active {
 	background: #444;
 	color: #f1c40f;
 }
-#contact-frame {
-	height: 11em;
-    margin-bottom: 2em;
-	border-radius: 1em;
-	display: flex;
-}
-#contact-frame-photo{
-	width: 7em;
-    height: 100%;
-    border-radius: 1em;
-	background: url('../images/html/jck-portrait.jpg');
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#contact-frame-infos ul{
-	list-style-type: none;
-    margin-top: 1em;
-    margin-left: -1.5em;
-    text-align: left;
-}
-#contact-frame-infos ul li{
-	margin-bottom: 0.5em;
-	font-size: 0.8em;
-}
-#contact-frame-infos ul li a{
-	margin-left: 0.5em;
-	color: white;
-}
+
 /*
 FONTS
 */
