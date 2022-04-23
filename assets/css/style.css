@@ -88,11 +88,11 @@ button:active {
 	padding: 0.5em 0.5em;
 }
 .secondary-buttons button.large {
-	width: 11.07em;
+	width: 12.75em;
     text-align: left;
-    font-size: 1.19em;
-    height: calc(4.5em / 1.19);
-    padding-left: 0.9em;
+    font-size: 1em;
+    height: 4.5em;
+    padding-left: 2.75em;
 }
 .large i {
     font-size: 1.43em;
