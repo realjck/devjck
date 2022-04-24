@@ -78,7 +78,7 @@ button:active {
 			  inset 2px 2px 4px rgba(0, 0, 0, .15);
 }
 
-button, button:hover, a:hover, button:active {
+button, button:hover, a, a:hover, button:active {
 	cursor: url("../../assets/images/cursor/hover.png"), auto;
 }
 
