@@ -1,5 +1,12 @@
-// cursor
-//$(this).css( 'cursor', 'url(../images/html/favicon.png), auto' );
+// click sound
+$(document).ready(function() {
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'assets/sounds/click.mp3');
+
+    $('button').click(function() {
+        audioElement.play();
+    });
+});
 
 // buttons
 $("#bt3").on("click", function(){
@@ -23,7 +30,8 @@ function showContact(shows){
 // preload
 preloadXHR([
     'assets/libs/fontawesome/webfonts/fa-solid-900.woff2',
-    'assets/libs/fontawesome/webfonts/fa-brands-400.woff2'
+    'assets/libs/fontawesome/webfonts/fa-brands-400.woff2',
+	'assets/sounds/click.mp3'
 ]);
 
 function preloadXHR(assetsAr){
