@@ -45,6 +45,21 @@ body > div {
     background-repeat: no-repeat;
 }
 
+#sound-button {
+	position: absolute;
+	width: 4em;
+	height: 4em;
+	right: calc(((100vw - 20em) / 2) - 1em);
+	background: url('../images/html/button_sound.svg');
+	background-size: cover;
+	background-position: top;
+    background-repeat: no-repeat;
+	cursor: url("../../assets/images/cursor/hover.png"), auto;
+}
+#sound-button.active {
+	background-position: bottom;
+}
+
 button {
     width: 20em;
     height: 4.5em;
