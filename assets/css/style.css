@@ -70,7 +70,7 @@ button {
 	border-radius: .5rem;
 	color: var(--text-color);
 	font-size: 1rem;
-	letter-spacing: .2rem;
+	letter-spacing: 0.05rem;
 	text-align: center;
 	outline: none;
 	cursor: pointer;
@@ -119,11 +119,38 @@ button, button:hover, a, a:hover, button:active {
 .large i {
     font-size: 1.9em;
 }
-button.active {
-	background: var(--text-color);;
-	color: var(--bg-color);
+.small-text {
+    font-size: 0.5em;
+    letter-spacing: 0;
 }
 
+/*
+COLOR BUTTONS
+*/
+button.inverse {
+	background: var(--text-color);;
+	color: white;
+}
+button.linkedin {
+	background: #0a66c2;
+	color: white;
+}
+button.twitter {
+	background: #1d9bf0;
+	color: white;
+}
+button.linktree {
+	background: linear-gradient(#88c132, #149809);
+	color: white;
+}
+button.blogger {
+	background: #f57c00;
+	color: white;
+}
+button.itch {
+	background: #ff2449;
+	color: white;
+}
 /*
 FONTS
 */

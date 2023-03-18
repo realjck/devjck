@@ -35,25 +35,6 @@ $(document).ready(function() {
     });
 });
 
-// buttons
-$("#bt3").on("click", function(){
-	showContact(true);
-});
-$("#bt-back").on("click", function(){
-	showContact(false);
-});
-
-function showContact(shows){
-	if (shows){
-		$("#main-buttons").hide();
-		$("#contact-buttons").fadeIn();
-	} else {
-		$("#main-buttons").fadeIn();
-		$("#contact-buttons").hide();
-	}
-}
-
-
 // preload
 preloadXHR([
     'assets/libs/fontawesome/webfonts/fa-solid-900.woff2',
