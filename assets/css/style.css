@@ -56,12 +56,17 @@ body > div {
 	margin-left: 16em;
 	background: url('../images/html/button_rotate.svg');
 	background-size: cover;
-	background-position: top;
+	background-position: bottom;
     background-repeat: no-repeat;
 	cursor: url("../../assets/images/cursor/hover.png"), auto;
+	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
+			  -6px -6px 10px rgba(255, 255, 255, .25),
+			  6px 6px 8px rgba(255, 255, 255, .0375),
+			  6px 6px 10px rgba(0, 0, 0, .30);
+    border-radius: 10em;
 }
 .rotate-button:hover {
-	background-position: bottom;
+	background-position: top;
 }
 
 button {
