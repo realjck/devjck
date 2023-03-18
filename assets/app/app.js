@@ -1,38 +1,23 @@
-// sound management
-var has_sound_off = "no";
+// rotation
+var is_rotated = false;
 
-if (localStorage.getItem("devJCK_soundOff")){
-	has_sound_off = localStorage.getItem("devJCK_soundOff");
-	checkButtonSound();
-}
-
-$("#sound-button").on("click", function(e){
-	if (has_sound_off == "yes"){
-		has_sound_off = "no";
+$(".rotate-button").on("click", function(e){
+	if (is_rotated){
+		is_rotated = false;
 	} else {
-		has_sound_off = "yes";
+		is_rotated = true;
 	}
-	checkButtonSound();
-	localStorage.setItem("devJCK_soundOff", has_sound_off);
-});
-
-function checkButtonSound(){
-	if (has_sound_off == "yes"){
-		$("#sound-button").addClass("active");
-	} else {
-		$("#sound-button").removeClass("active");
-	}
-}
-
-$(document).ready(function() {
-    var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'assets/sounds/click.mp3');
-
-    $('button').click(function() {
-		if (has_sound_off != "yes"){
-			audioElement.play();
+	$("#wrapper").css("transform", "scaleX(0)");
+	setTimeout(function(){
+		if (is_rotated){
+			$("#front").hide();
+			$("#back").show();
+		} else {
+			$("#front").show();
+			$("#back").hide();
 		}
-    });
+		$("#wrapper").css("transform", "scaleX(1)");
+	}, 350);
 });
 
 // preload

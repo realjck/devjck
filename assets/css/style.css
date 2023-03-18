@@ -26,6 +26,10 @@ body{
 	background: var(--bg-color);
 	flex-direction: column;
 }
+#wrapper {
+	transition: .35s ease-in-out;
+}
+
 a {
     color: inherit;
 	text-decoration: none;
@@ -45,18 +49,18 @@ body > div {
     background-repeat: no-repeat;
 }
 
-#sound-button {
+.rotate-button {
 	position: absolute;
 	width: 4em;
 	height: 4em;
-	right: calc(((100vw - 20em) / 2) - 1em);
-	background: url('../images/html/button_sound.svg');
+	margin-left: 16em;
+	background: url('../images/html/button_rotate.svg');
 	background-size: cover;
 	background-position: top;
     background-repeat: no-repeat;
 	cursor: url("../../assets/images/cursor/hover.png"), auto;
 }
-#sound-button.active {
+.rotate-button:hover {
 	background-position: bottom;
 }
 
@@ -127,6 +131,25 @@ button, button:hover, a, a:hover, button:active {
     letter-spacing: 0;
 }
 
+/* BACK QRCODE */
+#back {
+	height: 39.5em;
+}
+div#qrcode {
+    position: absolute;
+    background-color: white;
+    top: 12em;
+    padding: 1.5em;
+    border-radius: 2em;
+	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
+			  -6px -6px 10px rgba(255, 255, 255, .25),
+			  6px 6px 8px rgba(255, 255, 255, .0375),
+			  6px 6px 10px rgba(0, 0, 0, .30);
+}
+div#qrcode img {
+    width: 15em;
+}
+
 /*
 COLOR BUTTONS
 */
@@ -155,6 +178,7 @@ button.email i {
 button.phone i {
 	color: #1B1464;
 }
+
 /*
 FONTS
 */
