@@ -119,6 +119,9 @@ button, button:hover, a, a:hover, button:active {
 .large i {
     font-size: 1.9em;
 }
+.large i::before {
+    vertical-align: sub;
+}
 .small-text {
     font-size: 0.5em;
     letter-spacing: 0;
@@ -128,28 +131,29 @@ button, button:hover, a, a:hover, button:active {
 COLOR BUTTONS
 */
 button.inverse {
-	background: var(--text-color);;
-	color: white;
+	background: var(--text-color);
+	color: var(--bg-color);
 }
-button.linkedin {
-	background: #0a66c2;
-	color: white;
+button.linkedin i {
+	color: #0a66c2;
 }
-button.twitter {
-	background: #1d9bf0;
-	color: white;
+button.twitter i {
+	color: #1d9bf0;
 }
-button.linktree {
-	background: linear-gradient(#88c132, #149809);
-	color: white;
+button.linktree i {
+	color: #149809;
 }
-button.blogger {
-	background: #f57c00;
-	color: white;
+button.blogger i {
+	color: #B53471;
 }
-button.itch {
-	background: #ff2449;
-	color: white;
+button.itch i {
+	color: #EE5A24;
+}
+button.email i {
+	color: #006266;
+}
+button.phone i {
+	color: #1B1464;
 }
 /*
 FONTS
