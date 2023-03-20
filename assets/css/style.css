@@ -66,6 +66,9 @@ body > div {
 	transition: .2s ease-in-out;
     border-radius: 10em;
 }
+.rotate-button.reverse {
+	background-position: top;
+}
 
 button {
     width: 20em;
