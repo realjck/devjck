@@ -144,7 +144,7 @@ button, button:hover, a, a:hover, button:active {
 div#qrcode {
     position: absolute;
     background-color: white;
-    top: 12em;
+    top: 8em;
     padding: 1.5em;
     border-radius: 2em;
 	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
@@ -154,6 +154,16 @@ div#qrcode {
 }
 div#qrcode img {
     width: 15em;
+}
+
+.vcard-button {
+    top: 28.5em;
+    position: absolute;
+    width: 100%;
+}
+.vcard-button button {
+    width: 18em !important;
+    padding-left: 1.8em !important;
 }
 
 /*
