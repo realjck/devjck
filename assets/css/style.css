@@ -145,6 +145,7 @@ div#qrcode {
     position: absolute;
     background-color: white;
     top: 8em;
+	margin-left: 1em;
     padding: 1.5em;
     border-radius: 2em;
 	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
@@ -158,6 +159,7 @@ div#qrcode img {
 
 .vcard-button {
     top: 28.5em;
+	margin-left: 1em;
     position: absolute;
     width: 100%;
 }
