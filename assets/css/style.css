@@ -28,12 +28,7 @@ body{
 }
 #wrapper {
 	transition: .35s ease-in-out;
-}
-
-@media (max-width: 21em) {
-	#wrapper {
-		scale: 0.75;
-	}
+	width: 20em;
 }
 
 a {
