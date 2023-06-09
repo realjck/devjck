@@ -6,6 +6,8 @@ const wrapper = document.getElementById("wrapper");
 const front = document.getElementById("front");
 const back = document.getElementById("back");
 
+let wrapperScale = 1;
+
 rotateButtons.forEach(bt => bt.addEventListener('click', e => {
 
 	is_rotated = !is_rotated;
@@ -19,18 +21,16 @@ rotateButtons.forEach(bt => bt.addEventListener('click', e => {
 			front.style.display = "block";
 			back.style.display = "none";
 		}
-		wrapper.style.transform = "scaleX(1)";
+		wrapper.style.transform = "scaleX("+wrapperScale+")";
 	}, 350);
 }));
 
 // scale wrapper < 22em
 function resizeWrapper() {
   if (window.innerWidth < 22 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
-    var wrapper = document.getElementById('wrapper');
-    var scale = window.innerWidth / (22 * parseFloat(getComputedStyle(document.documentElement).fontSize));
-    wrapper.style.transform = 'scale(' + scale + ')';
+    wrapperScale = window.innerWidth / (22 * parseFloat(getComputedStyle(document.documentElement).fontSize));
+    wrapper.style.transform = 'scale(' + wrapperScale + ')';
   } else {
-    var wrapper = document.getElementById('wrapper');
     wrapper.style.transform = 'scale(1)';
   }
 }
