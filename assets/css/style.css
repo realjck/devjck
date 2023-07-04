@@ -132,6 +132,9 @@ button, button:hover, a, a:hover, button:active {
     padding-left: 2.4em;
     padding-bottom: 1em;
 }
+i {
+	pointer-events: none;
+}
 .large i {
     font-size: 1.9em;
 }
