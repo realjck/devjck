@@ -165,12 +165,12 @@ button > img {
 	vertical-align: bottom;
 	pointer-events: none;
 }
-button {
+/* button {
 	border: 3px solid white;
 }
 button:hover {
 	border: 4px solid white;
-}
+} */
 /* BACK QRCODE */
 #back {
 	height: 39.5em;
