@@ -36,6 +36,20 @@ body{
 	}
 }
 
+h1 {
+    text-align: left;
+    font-size: 1.6em;
+	line-height: 1.25em;
+	height:3em;
+}
+h2 {
+	text-align: left;
+	font-weight: 300;
+	font-size: 1em;
+	height: 3em;
+}
+
+
 a {
     color: inherit;
 	text-decoration: none;
@@ -47,11 +61,10 @@ body > div {
 }
 
 #logo {
-	height: 18em;
+	height: 12em;
 	margin-bottom: 2em;
 	background: url('../images/html/devjck.svg');
-	background-size: cover;
-	background-position: bottom;
+	background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -145,7 +158,19 @@ i {
     font-size: 0.5em;
     letter-spacing: 0;
 }
-
+button > img {
+	width: 2em;
+	margin-right: 0.2em;
+	margin-left: -1.5em;
+	vertical-align: bottom;
+	pointer-events: none;
+}
+button {
+	border: 3px solid white;
+}
+button:hover {
+	border: 4px solid white;
+}
 /* BACK QRCODE */
 #back {
 	height: 39.5em;
@@ -213,4 +238,9 @@ FONTS
 	font-family: "Quicksand";
 	src: url(../fonts/Quicksand/Quicksand-Bold.ttf) format("truetype");
 	font-weight: 700;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url(../fonts/Quicksand/Quicksand-Medium.ttf) format("truetype");
+	font-weight: 600;
 }
