@@ -1,0 +1,26 @@
+{
+  "short_name": "devJCK",
+  "name": "devJCK",
+  "icons": [
+    {
+      "src": "/assets/images/html/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/assets/images/html/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/html/favicon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#f1c40f",
+  "background_color": "#f1c40f",
+  "display": "minimal-ui",
+  "scope": "/",
+  "start_url": "/"
+}
