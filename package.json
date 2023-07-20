@@ -1,0 +1,7 @@
+{
+  "name": "devJCK",
+  "homepage": "https://devjck.fr",
+  "devDependencies": {
+    "workbox-cli": "^7.0.0"
+  }
+}

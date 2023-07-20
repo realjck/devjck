@@ -5,7 +5,8 @@
     {
       "src": "/assets/images/html/favicon.svg",
       "type": "image/svg+xml",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     },
     {
       "src": "/assets/images/html/favicon.png",
@@ -15,7 +16,8 @@
     {
       "src": "/assets/images/html/favicon_512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
   "theme_color": "#f1c40f",
