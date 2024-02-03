@@ -14,7 +14,7 @@ body{
 	user-select: none;
 	scroll-behavior: smooth;
 	-webkit-tap-highlight-color: transparent;
-	cursor: url("../../assets/images/cursor/normal.png"), auto;
+	cursor: url("./../images/cursor/normal.png"), auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -61,7 +61,7 @@ body > div {
 #logo {
 	height: 12em;
 	margin-bottom: 2em;
-	background: url('../images/html/devjck.svg') no-repeat top;
+	background: url('./../images/html/devjck.svg') no-repeat top;
 }
 
 .rotate-button {
@@ -69,9 +69,9 @@ body > div {
 	width: 4em;
 	height: 4em;
 	margin-left: 16em;
-	background: url('../images/html/button_rotate.svg') no-repeat bottom;
+	background: url('./../images/html/button_rotate.svg') no-repeat bottom;
 	background-size: cover;
-	cursor: url("../../assets/images/cursor/hover.png"), auto;
+	cursor: url("./../images/cursor/hover.png"), auto;
 	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
 	-6px -6px 10px rgba(255, 255, 255, .25),
 	6px 6px 8px rgba(255, 255, 255, .0375),
@@ -120,7 +120,7 @@ button:active, .rotate-button:active {
 }
 
 button, button:hover, a, a:hover, button:active {
-	cursor: url("../../assets/images/cursor/hover.png"), auto;
+	cursor: url("./../images/cursor/hover.png"), auto;
 }
 
 .secondary-buttons {
@@ -244,12 +244,12 @@ button.phone i {
 
 @font-face {
 	font-family: "Quicksand";
-	src: url(../fonts/Quicksand/Quicksand-Bold.ttf) format("truetype");
+	src: url(./../fonts/Quicksand/Quicksand-Bold.ttf) format("truetype");
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: "Quicksand";
-	src: url(../fonts/Quicksand/Quicksand-Medium.ttf) format("truetype");
+	src: url(./../fonts/Quicksand/Quicksand-Medium.ttf) format("truetype");
 	font-weight: 600;
 }
