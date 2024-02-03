@@ -7,16 +7,16 @@
 	--text-color: black;
 }
 body{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	scroll-behavior: smooth;
 	-webkit-tap-highlight-color: transparent;
 	
-	cursor: url("../../assets/images/cursor/normal.png"), auto;
+	cursor: url("..rsor/normal.png"), auto;
 	
 	display: flex;
 	justify-content: center;
@@ -37,8 +37,8 @@ body{
 }
 
 h1 {
-    text-align: left;
-    font-size: 1.6em;
+	text-align: left;
+	font-size: 1.6em;
 	line-height: 1.25em;
 	height:3em;
 }
@@ -51,7 +51,7 @@ h2 {
 
 
 a {
-    color: inherit;
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ body > div {
 	margin-bottom: 2em;
 	background: url('../images/html/devjck.svg');
 	background-position: top;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .rotate-button {
@@ -76,24 +76,24 @@ body > div {
 	background: url('../images/html/button_rotate.svg');
 	background-size: cover;
 	background-position: bottom;
-    background-repeat: no-repeat;
-	cursor: url("../../assets/images/cursor/hover.png"), auto;
+	background-repeat: no-repeat;
+	cursor: url("..rsor/hover.png"), auto;
 	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
-			  -6px -6px 10px rgba(255, 255, 255, .25),
-			  6px 6px 8px rgba(255, 255, 255, .0375),
-			  6px 6px 10px rgba(0, 0, 0, .30);
+				-6px -6px 10px rgba(255, 255, 255, .25),
+				6px 6px 8px rgba(255, 255, 255, .0375),
+				6px 6px 10px rgba(0, 0, 0, .30);
 	transition: .2s ease-in-out;
-    border-radius: 10em;
+	border-radius: 10em;
 }
 .rotate-button.reverse {
 	background-position: top;
 }
 
 button {
-    width: 20em;
-    height: 4.5em;
+	width: 20em;
+	height: 4.5em;
 	padding: 1.5em 1.5em;
-    margin-bottom: 2em;
+	margin-bottom: 2em;
 	background: var(--bg-color);
 	border: none;
 	border-radius: .5rem;
@@ -105,30 +105,30 @@ button {
 	cursor: pointer;
 	transition: .2s ease-in-out;
 	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
-			  -6px -6px 10px rgba(255, 255, 255, .25),
-			  6px 6px 8px rgba(255, 255, 255, .0375),
-			  6px 6px 10px rgba(0, 0, 0, .30);
+				-6px -6px 10px rgba(255, 255, 255, .25),
+				6px 6px 8px rgba(255, 255, 255, .0375),
+				6px 6px 10px rgba(0, 0, 0, .30);
 }
 button:hover, .rotate-button:hover {
 	box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-			  -2px -2px 4px rgba(255, 255, 255, .4),
-			  2px 2px 2px rgba(255, 255, 255, .05),
-			  2px 2px 4px rgba(0, 0, 0, .5);
+				-2px -2px 4px rgba(255, 255, 255, .4),
+				2px 2px 2px rgba(255, 255, 255, .05),
+				2px 2px 4px rgba(0, 0, 0, .5);
 }
 button:active, .rotate-button:active {
 	box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
-			  inset -2px -2px 4px rgba(255, 255, 255, .5),
-			  inset 2px 2px 2px rgba(255, 255, 255, .075),
-			  inset 2px 2px 4px rgba(0, 0, 0, .15);
+				inset -2px -2px 4px rgba(255, 255, 255, .5),
+				inset 2px 2px 2px rgba(255, 255, 255, .075),
+				inset 2px 2px 4px rgba(0, 0, 0, .15);
 }
 
 button, button:hover, a, a:hover, button:active {
-	cursor: url("../../assets/images/cursor/hover.png"), auto;
+	cursor: url("..rsor/hover.png"), auto;
 }
 
 .secondary-buttons {
-    justify-content: space-between;
-    display: flex;
+	justify-content: space-between;
+	display: flex;
 }
 .secondary-buttons button {
 	font-size: 1.7em;
@@ -139,24 +139,24 @@ button, button:hover, a, a:hover, button:active {
 }
 .secondary-buttons button.large {
 	width: 12.75em;
-    text-align: left;
-    font-size: 1em;
-    height: 4.5em;
-    padding-left: 2.4em;
-    padding-bottom: 1em;
+	text-align: left;
+	font-size: 1em;
+	height: 4.5em;
+	padding-left: 2.4em;
+	padding-bottom: 1em;
 }
 i {
 	pointer-events: none;
 }
 .large i {
-    font-size: 1.9em;
+	font-size: 1.9em;
 }
 .large i::before {
-    vertical-align: sub;
+	vertical-align: sub;
 }
 .small-text {
-    font-size: 0.5em;
-    letter-spacing: 0;
+	font-size: 0.5em;
+	letter-spacing: 0;
 }
 button > img {
 	width: 2em;
@@ -176,30 +176,30 @@ button:hover {
 	height: 39.5em;
 }
 div#qrcode {
-    position: absolute;
-    background-color: white;
-    top: 8em;
+	position: absolute;
+	background-color: white;
+	top: 8em;
 	margin-left: 1em;
-    padding: 1.5em;
-    border-radius: 2em;
+	padding: 1.5em;
+	border-radius: 2em;
 	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
-			  -6px -6px 10px rgba(255, 255, 255, .25),
-			  6px 6px 8px rgba(255, 255, 255, .0375),
-			  6px 6px 10px rgba(0, 0, 0, .30);
+				-6px -6px 10px rgba(255, 255, 255, .25),
+				6px 6px 8px rgba(255, 255, 255, .0375),
+				6px 6px 10px rgba(0, 0, 0, .30);
 }
 div#qrcode img {
-    width: 15em;
+	width: 15em;
 }
 
 .vcard-button {
-    top: 28.5em;
+	top: 28.5em;
 	margin-left: 1em;
-    position: absolute;
-    width: 100%;
+	position: absolute;
+	width: 100%;
 }
 .vcard-button button {
-    width: 18em !important;
-    padding-left: 1.8em !important;
+	width: 18em !important;
+	padding-left: 1.8em !important;
 }
 
 /*
