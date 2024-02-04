@@ -71,10 +71,13 @@ body > div {
 	height: 4em;
 	margin-left: 16em;
 	background: url('./../images/html/button_rotate.svg') no-repeat bottom;
-	background-size: cover;
+	background-size: cover !important;
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
 	cursor: url("./../images/cursor/hover.png"), auto;
 	transition: .2s ease-in-out;
 	border-radius: 10em;
+
 }
 
 .rotate-button.reverse {
@@ -103,15 +106,17 @@ button:hover, .rotate-button:hover {
 			-2px -2px 6px var(--highlight-color),
 			-2px 2px 6px var(--highlight-color),
 			2px -2px 6px var(--highlight-color),
-			2px 2px 6px var(--highlight-color)
+			2px 2px 6px var(--highlight-color);
+	background-color: var(--text-color);
+	color: var(--bg-color);
+	transition-property: box-shadow;
 }
 
 button:active, .rotate-button:active {
 	box-shadow: none;
 	transition: 1.5s;
 	transition-property: box-shadow;
-	background: var(--text-color);
-	color: var(--bg-color);
+
 }
 
 button, button:hover, a, a:hover, button:active {
