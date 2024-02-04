@@ -1,5 +1,10 @@
 # devjck
  
-Plain HTML landing page with neumorphism CSS buttons and FontAwesome
+## HTML Mobile contact card links hub web page
 
-Site hosted on Github Pages https://devjck.fr
+Hosted from this repository https://devjck.fr
+
+### Libraries
+
+- Font Awesome Free 6.4.2
+- MesloLG font
