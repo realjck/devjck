@@ -37,5 +37,16 @@ openCloseFolders.forEach(bt => bt.addEventListener('mouseout', e => {
 }));
 
 
+// vertical center
+function adjustMarginTop() {
+	const windowHeight = window.innerHeight;
+	const resizer = document.getElementById('resizer');
+	const resizerHeight = resizer.clientHeight;
+	const marginTopValue = (windowHeight - resizerHeight) / 2;
+	resizer.style.marginTop = marginTopValue + 'px';
+}
+adjustMarginTop();
+window.addEventListener('resize', adjustMarginTop);
+
 // (*^▽^*)
 console.log("🍔🌭🍔🍔🍔🌭🍔🍔🍔🌭🌭🍔🌭🌭🌭🌭🍔🌭🌭🍔🌭🌭🌭🍔🍔🍔🌭🍔🍔🌭🌭🌭🍔🌭🌭🌭🍔🌭🍔🍔🍔🍔🌭🍔🍔🍔🍔🍔🍔🌭🌭🌭🍔🌭🍔🍔🍔🌭🌭🍔🌭🍔🍔🍔🍔🌭🌭🍔🍔🌭🍔🌭🍔🍔🌭🍔🍔🍔🍔🍔🍔🌭🌭🌭🌭🍔🍔🌭🍔🌭🌭🍔🍔🌭🍔🌭🍔🌭🌭🍔🌭🌭🍔🍔🍔🌭🌭🍔🌭🌭🍔🍔🍔🌭🌭🍔🌭🌭🌭🌭🍔🌭🌭🌭🍔🌭🌭🌭🍔🍔🌭🍔🍔🍔🍔🍔🍔🌭🌭🌭🍔🍔🌭🌭🍔🌭🌭🍔🌭🌭🌭🍔🍔🌭🌭🍔🌭🌭🌭🌭🍔🌭🌭🌭🍔🌭🌭🌭");
