@@ -1,9 +1,9 @@
 * {
 	margin: 0;
-	font-family: "Quicksand", sans-serif;
-	font-weight: 700;
-	--bg-color: #f1c40f;
-	--text-color: black;
+	font-family: "Meslo", sans-serif;
+	--bg-color: #060c24;
+	--text-color: #5ad2e1;
+	--highlight-color: #5ad2e1a5;
 }
 
 body{
@@ -21,6 +21,7 @@ body{
 	height: 100%;
 	padding: 0;
 	background: var(--bg-color);
+	color: var(--text-color);
 	flex-direction: column;
 	overflow: hidden;
 }
@@ -37,14 +38,13 @@ body{
 
 h1 {
 	text-align: left;
-	font-size: 1.6em;
+	font-size: 1em;
 	line-height: 1.25em;
 	height:3em;
 }
 
 h2 {
 	text-align: left;
-	font-weight: 300;
 	font-size: 1em;
 	height: 3em;
 }
@@ -73,10 +73,6 @@ body > div {
 	background: url('./../images/html/button_rotate.svg') no-repeat bottom;
 	background-size: cover;
 	cursor: url("./../images/cursor/hover.png"), auto;
-	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
-	-6px -6px 10px rgba(255, 255, 255, .25),
-	6px 6px 8px rgba(255, 255, 255, .0375),
-	6px 6px 10px rgba(0, 0, 0, .30);
 	transition: .2s ease-in-out;
 	border-radius: 10em;
 }
@@ -91,7 +87,6 @@ button {
 	padding: 1.5em 1.5em;
 	margin-bottom: 2em;
 	background: var(--bg-color);
-	border: none;
 	border-radius: .5rem;
 	color: var(--text-color);
 	font-size: 1rem;
@@ -100,24 +95,23 @@ button {
 	outline: none;
 	cursor: pointer;
 	transition: .2s ease-in-out;
-	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
-	-6px -6px 10px rgba(255, 255, 255, .25),
-	6px 6px 8px rgba(255, 255, 255, .0375),
-	6px 6px 10px rgba(0, 0, 0, .30);
+	border: 2px solid var(--text-color);
 }
 
 button:hover, .rotate-button:hover {
-	box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-	-2px -2px 4px rgba(255, 255, 255, .4),
-	2px 2px 2px rgba(255, 255, 255, .05),
-	2px 2px 4px rgba(0, 0, 0, .5);
+	box-shadow:
+			-2px -2px 6px var(--highlight-color),
+			-2px 2px 6px var(--highlight-color),
+			2px -2px 6px var(--highlight-color),
+			2px 2px 6px var(--highlight-color)
 }
 
 button:active, .rotate-button:active {
-	box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
-	inset -2px -2px 4px rgba(255, 255, 255, .5),
-	inset 2px 2px 2px rgba(255, 255, 255, .075),
-	inset 2px 2px 4px rgba(0, 0, 0, .15);
+	box-shadow: none;
+	transition: 1.5s;
+	transition-property: box-shadow;
+	background: var(--text-color);
+	color: var(--bg-color);
 }
 
 button, button:hover, a, a:hover, button:active {
@@ -161,6 +155,11 @@ i {
 .small-text {
 	font-size: 0.5em;
 	letter-spacing: 0;
+	margin-top: -0.7em;
+}
+
+.block {
+	display: block;
 }
 
 button > img {
@@ -179,15 +178,11 @@ button > img {
 
 div#qrcode {
 	position: absolute;
-	background-color: white;
+	background-color: var(--text-color);
 	top: 8em;
 	margin-left: 1em;
 	padding: 1.5em;
 	border-radius: 2em;
-	box-shadow: -6px -6px 14px rgba(255, 255, 255, .35),
-	-6px -6px 10px rgba(255, 255, 255, .25),
-	6px 6px 8px rgba(255, 255, 255, .0375),
-	6px 6px 10px rgba(0, 0, 0, .30);
 }
 
 div#qrcode img {
@@ -213,44 +208,9 @@ button.inverse {
 	color: var(--bg-color);
 }
 
-button.linkedin i {
-	color: #0a66c2;
-}
-
-button.twitter i {
-	color: #1d9bf0;
-}
-
-button.linktree i {
-	color: #149809;
-}
-
-button.blogger i {
-	color: #eb4d4b;
-}
-
-button.itch i {
-	color: #be2edd;
-}
-
-button.email i {
-	color: #1B1464;
-}
-
-button.phone i {
-	color: #1B1464;
-}
-
 /* FONTS */
 
 @font-face {
-	font-family: "Quicksand";
-	src: url(./../fonts/Quicksand/Quicksand-Bold.ttf) format("truetype");
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: "Quicksand";
-	src: url(./../fonts/Quicksand/Quicksand-Medium.ttf) format("truetype");
-	font-weight: 600;
+	font-family: "Meslo";
+	src: url(./../fonts/Meslo/MesloLGLRegular.ttf) format("truetype");
 }
