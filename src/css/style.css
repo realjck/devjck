@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	font-family: "Meslo", sans-serif;
+	--bg-color: #060c24;
+	--text-color: #5ad2e1;
+	--highlight-color: #5ad2e1a5;
+}
+
+body{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	cursor: url("./../images/cursor/normal.png"), auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background: var(--bg-color);
+	color: var(--text-color);
+	flex-direction: column;
+	overflow: hidden;
+}
+
+#wrapper {
+	transition: .35s ease-in-out;
+}
+
+@media (max-width: 21em) {
+	#resizer {
+		scale: 0.70;
+	}
+}
+
+h1 {
+	text-align: left;
+	font-size: 1em;
+	line-height: 1.25em;
+	height:3em;
+}
+
+h2 {
+	text-align: left;
+	font-size: 1em;
+	height: 3em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body > div {
+	text-align: center;
+	width: 20em;
+}
+
+#logo {
+	height: 12em;
+	margin-bottom: 2em;
+	background: url('./../images/html/devjck.svg') no-repeat top;
+}
+
+.rotate-button {
+	position: absolute;
+	width: 4em;
+	height: 4em;
+	margin-left: 16em;
+	background: url('./../images/html/button_rotate.svg') no-repeat bottom;
+	background-size: cover !important;
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+	cursor: url("./../images/cursor/hover.png"), auto;
+	transition: .2s ease-in-out;
+	border-radius: 10em;
+
+}
+
+.rotate-button.reverse {
+	background-position: top;
+}
+
+button {
+	width: 20em;
+	height: 4.5em;
+	padding: 1.5em 1.5em;
+	margin-bottom: 2em;
+	background: var(--bg-color);
+	border-radius: .5rem;
+	color: var(--text-color);
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	border: 2px solid var(--text-color);
+}
+
+button:hover, .rotate-button:hover {
+	box-shadow:
+			-2px -2px 6px var(--highlight-color),
+			-2px 2px 6px var(--highlight-color),
+			2px -2px 6px var(--highlight-color),
+			2px 2px 6px var(--highlight-color);
+	background-color: var(--text-color);
+	color: var(--bg-color);
+	transition-property: box-shadow;
+}
+
+button:active, .rotate-button:active {
+	box-shadow: none;
+	transition: 1.5s;
+	transition-property: box-shadow;
+
+}
+
+button, button:hover, a, a:hover, button:active {
+	cursor: url("./../images/cursor/hover.png"), auto;
+}
+
+.secondary-buttons {
+	justify-content: space-between;
+	display: flex;
+}
+
+.secondary-buttons button {
+	font-size: 1.7em;
+	height: calc(4.5em / 1.7);
+	margin-bottom: calc(2em / 1.7);
+	width: 3em;
+	padding: 0.5em 0.5em;
+}
+
+.secondary-buttons button.large {
+	width: 12.75em;
+	text-align: left;
+	font-size: 1em;
+	height: 4.5em;
+	padding-left: 2.4em;
+	padding-bottom: 1em;
+}
+
+i {
+	pointer-events: none;
+}
+
+.large i {
+	font-size: 1.9em;
+}
+
+.large i::before {
+	vertical-align: sub;
+}
+
+.small-text {
+	font-size: 0.5em;
+	letter-spacing: 0;
+	margin-top: -0.7em;
+}
+
+.block {
+	display: block;
+}
+
+button > img {
+	width: 2em;
+	margin-right: 0.2em;
+	margin-left: -1.5em;
+	vertical-align: bottom;
+	pointer-events: none;
+}
+
+/* BACK QRCODE */
+
+#back {
+	height: 39.5em;
+}
+
+div#qrcode {
+	position: absolute;
+	background-color: var(--text-color);
+	top: 8em;
+	margin-left: 1em;
+	padding: 1.5em;
+	border-radius: 2em;
+}
+
+div#qrcode img {
+	width: 15em;
+}
+
+.vcard-button {
+	top: 28.5em;
+	margin-left: 1em;
+	position: absolute;
+	width: 100%;
+}
+
+.vcard-button button {
+	width: 18em !important;
+	padding-left: 1.8em !important;
+}
+
+/* COLOR BUTTONS */
+
+button.inverse {
+	background: var(--text-color);
+	color: var(--bg-color);
+}
+
+/* FONTS */
+
+@font-face {
+	font-family: "Meslo";
+	src: url(./../fonts/Meslo/MesloLGLRegular.ttf) format("truetype");
+}
