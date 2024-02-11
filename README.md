@@ -8,3 +8,5 @@ Hosted from this repository https://devjck.fr
 
 - Font Awesome Free 6.4.2
 - MesloLG font
+
+git test
