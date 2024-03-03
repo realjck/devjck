@@ -73,7 +73,7 @@ a {
 	display: block;
 	width: 1em;
 	height: 1em;
-	margin: 0 0 0.3em 0.45em;
+	margin: 0.25em 0 0.3em 0.45em;
 	background: url(./../images/html/linktree.svg) no-repeat top;
 }
 
