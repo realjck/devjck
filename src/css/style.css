@@ -63,22 +63,14 @@ a {
 	margin-left: -0.5em;
 }
 
+.margin-left-n-quarter-em {
+	margin-left: -0.25em;
+}
+
 #logo {
 	height: 12em;
 	margin-bottom: 2em;
 	background: url('./../images/html/devjck.svg') no-repeat top;
-}
-
-.linktree-icon {
-	display: block;
-	width: 1em;
-	height: 1em;
-	margin: 0.25em 0 0.3em 0.45em;
-	background: url(./../images/html/linktree.svg) no-repeat top;
-}
-
-button:hover .linktree-icon {
-	background: url(./../images/html/linktree-hover.svg) no-repeat top;
 }
 
 .rotate-button {
